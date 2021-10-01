@@ -33,36 +33,42 @@
         <br>
         <div class="row">
             <div class="col-sm">
-                <form>
+                <form class="was-validated">
                     <div class="row">
                         <div class="col-sm">
                             <div class="form-group">
                                 <label for="name">Full Name:</label>
                                 <input type="text" class="form-control" placeholder="Enter your full name here"
-                                    id="name">
+                                    id="name" required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="age">Age:</label>
-                                <input type="number" class="form-control" placeholder="Enter your age here" id="age">
+                                <input type="number" class="form-control" placeholder="Enter your age here" id="age"
+                                    required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
                         </div>
                     </div>
                     <div class="row" id="selectsex">
                         <div class="col-sm">
                             <label for="sex">Sex:</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="optsex" id="sexm" value="m">
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optsex" id="sexm" value="m" required>
                                 <label class="form-check-label" for="sexm">Male</label>
                             </div>
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="optsex" id="sexf" value="f">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optsex" id="sexf" value="f" required>
                                 <label class="form-check-label" for="sexf">Female</label>
+                                <div class="invalid-feedback" style="margin-left: 1em">Please choose an option.</div>
                             </div>
                         </div>
                     </div>
-                    <div class="form-group form-check">
+                    <br>
+                    <div class="form-check">
                         <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" value="" id="marriage">Are you married?
                         </label>
@@ -70,15 +76,19 @@
                     <hr>
                     <div class="row" id="q1">
                         <div class="col-sm">
-                            <label for="q1">1. Have you recently traveled to an area with known local spread of
+                            <label for="q2">1. Have you recently traveled to an area with known local spread of
                                 COVID-19?</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="optq1" id="optq1y" value=true>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optq1" id="optq1y" value=true
+                                    required>
                                 <label class="form-check-label" for="optq1y">Yes</label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="optq1" id="optq1n" value=false>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optq1" id="optq1n" value=false
+                                    required>
                                 <label class="form-check-label" for="optq1n">No</label>
+                                <div class="invalid-feedback" style="margin-left: 1em">Please choose an option.</div>
                             </div>
                         </div>
                     </div>
@@ -87,13 +97,17 @@
                         <div class="col-sm">
                             <label for="q2">2. Have you come into close contact (within 6 feet) with someone who has a
                                 laboratory confirmed COVID-19 diagnosis in the past 14 days?</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="optq2" id="optq2y" value=true>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optq2" id="optq2y" value=true
+                                    required>
                                 <label class="form-check-label" for="optq2y">Yes</label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="optq2" id="optq2n" value=false>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optq2" id="optq2n" value=false
+                                    required>
                                 <label class="form-check-label" for="optq12n">No</label>
+                                <div class="invalid-feedback" style="margin-left: 1em">Please choose an option.</div>
                             </div>
                         </div>
                     </div>
@@ -104,13 +118,17 @@
                                 lower
                                 respiratory illness such as cough, shortness of breath, difficulty breathing or sore
                                 throat?</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="optq3" id="optq3y" value=true>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optq3" id="optq3y" value=true
+                                    required>
                                 <label class="form-check-label" for="optq3y">Yes</label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="optq3" id="optq3n" value=false>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optq3" id="optq3n" value=false
+                                    required>
                                 <label class="form-check-label" for="optq3n">No</label>
+                                <div class="invalid-feedback" style="margin-left: 1em">Please choose an option.</div>
                             </div>
                         </div>
                     </div>
@@ -119,24 +137,32 @@
                         <div class="col-sm">
                             <label for="q4">4. Are you a first responder, healthcare worker, or employee or attendee of
                                 a child or adult care facility?</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="optq4" id="optq4y" value=true>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optq4" id="optq4y" value=true
+                                    required>
                                 <label class="form-check-label" for="optq4y">Yes</label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="optq4" id="optq4n" value=false>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="optq4" id="optq4n" value=false
+                                    required>
                                 <label class="form-check-label" for="optq4n">No</label>
+                                <div class="invalid-feedback" style="margin-left: 1em">Please choose an option.</div>
                             </div>
                         </div>
                     </div>
                     <br>
-                    <div class="form-group form-check">
-                        <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="truth">I have answered these
-                            question correctly
-                        </label>
-                    </div>
-                    <button type="button" class="btn btn-primary" id="btnsubmit">Submit</button>
+                    <form class="was-validated">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="" id="truth" required>I have
+                                answered these question correctly.
+                                <div class="invalid-feedback">Check this checkbox to continue.</div>
+                            </label>
+                        </div>
+                    </form>
+                    <br>
+                    <button type="submit" class="btn btn-primary" id="btnsubmit">Submit</button>
                     <script>
                         $(document).ready(function () {
                             $("#btnsubmit").click(function () {
@@ -144,6 +170,7 @@
                                 var age = $("#age").val();
                                 var sex = $("#selectsex input:radio:checked").val();
                                 var marriage = $("#marriage").is(":checked");
+                                var truecheck = $("#truth").is(":checked");
                                 var spc = name.indexOf(" ");
                                 var lname = name.substring(spc, name.length);
                                 $("#lname").text(lname);
@@ -164,7 +191,7 @@
                                 else if (sex == "f" && age > 25 && marriage == false) {
                                     $("#sal").text("Miss");
                                 }
-                                else if (sex == "f" && age > 25 && marriage == false) {
+                                else if (sex == "f" && age > 25 && marriage == true) {
                                     $("#sal").text("Mrs.");
                                 }
                                 else {
@@ -192,8 +219,10 @@
                                 } else {
                                     $("#rec").text("Practice social distancing and watch for symptoms.");
                                 }
-                                $("html, body").animate({ scrollTop: $("html, body").get(0).scrollHeight }, 2000);
-                                $("#ans").slideDown();
+                                if (name!= "" && age!= "" && sex!= null && truecheck!=false && q1!= null && q2!= null && q3!= null && q4!= null) {
+                                    $("html, body").animate({ scrollTop: $("html, body").get(0).scrollHeight }, 2000);
+                                    $("#ans").slideDown();
+                                }
                             });
                         });
                     </script>
@@ -233,6 +262,11 @@
         <div class="row">
             <div class="col-sm">
                 <h7>Thank you.</h7>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <small>For more info about COVID-19, click <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19">here</a></small>
             </div>
         </div>
     </div>
