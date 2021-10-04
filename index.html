@@ -36,7 +36,7 @@
                 <form class="was-validated">
                     <div class="row">
                         <div class="col-sm">
-                            <div class="form-group">
+                            <div class="form-group" id="nameform">
                                 <label for="name">Full Name:</label>
                                 <input type="text" class="form-control" placeholder="Enter your full name here"
                                     id="name" required>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="form-group">
+                            <div class="form-group" id="ageform">
                                 <label for="age">Age:</label>
                                 <input type="number" class="form-control" placeholder="Enter your age here" id="age"
                                     required>
@@ -154,7 +154,7 @@
                     <br>
                     <form class="was-validated">
                         <div class="form-check">
-                            <label class="form-check-label">
+                            <label class="form-check-label" id="truthcheck">
                                 <input type="checkbox" class="form-check-input" value="" id="truth" required>I have
                                 answered these question correctly.
                                 <div class="invalid-feedback">Check this checkbox to continue.</div>
@@ -165,6 +165,7 @@
                     <button type="submit" class="btn btn-primary" id="btnsubmit">Submit</button>
                     <script>
                         $(document).ready(function () {
+                            $(".invalid-feedback").hide();
                             $("#btnsubmit").click(function () {
                                 var name = $("#name").val();
                                 var age = $("#age").val();
@@ -219,9 +220,41 @@
                                 } else {
                                     $("#rec").text("Practice social distancing and watch for symptoms.");
                                 }
-                                if (name!= "" && age!= "" && sex!= null && truecheck!=false && q1!= null && q2!= null && q3!= null && q4!= null) {
-                                    $("html, body").animate({ scrollTop: $("html, body").get(0).scrollHeight }, 2000);
+                                if (name != "" && age != "" && sex != null && truecheck != false && q1 != null && q2 != null && q3 != null && q4 != null) {
+                                    $("html, body").animate({ scrollTop: $("html, body").get(0).scrollHeight }, 10);
                                     $("#ans").slideDown();
+                                }
+                                if (name == "") {
+                                    $("#nameform .invalid-feedback").show();
+                                    $("#ans").hide();
+                                }
+                                if (age == "") {
+                                    $("#ageform .invalid-feedback").show();
+                                    $("#ans").hide();
+                                }
+                                if (sex == null) {
+                                    $("#selectsex .invalid-feedback").show();
+                                    $("#ans").hide();
+                                }
+                                if (truecheck == false) {
+                                    $("#truthcheck .invalid-feedback").show();
+                                    $("#ans").hide();
+                                }
+                                if (q1 == null) {
+                                    $("#q1 .invalid-feedback").show();
+                                    $("#ans").hide();
+                                }
+                                if (q2 == null) {
+                                    $("#q2 .invalid-feedback").show();
+                                    $("#ans").hide();
+                                }
+                                if (q3 == null) {
+                                    $("#q3 .invalid-feedback").show();
+                                    $("#ans").hide();
+                                }
+                                if (q4 == null) {
+                                    $("#q4 .invalid-feedback").show();
+                                    $("#ans").hide();
                                 }
                             });
                         });
@@ -266,7 +299,8 @@
         </div>
         <div class="row">
             <div class="col-sm">
-                <small>For more info about COVID-19, click <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19">here</a></small>
+                <small>For more info about COVID-19, click <a
+                        href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19">here</a></small>
             </div>
         </div>
     </div>
