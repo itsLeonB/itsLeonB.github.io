@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="questions">
         <div class="row">
             <div class="col-sm">
                 <h2>COVID-19 Risk Self-assessment Program</h2>
@@ -222,6 +222,7 @@
                                 }
                                 if (name != "" && age != "" && sex != null && truecheck != false && q1 != null && q2 != null && q3 != null && q4 != null) {
                                     $("html, body").animate({ scrollTop: $("html, body").get(0).scrollHeight }, 10);
+                                    $("#questions").slideUp();
                                     $("#ans").slideDown();
                                 }
                                 if (name == "") {
@@ -271,36 +272,36 @@
                 });
             </script>
             <div class="col-sm">
-                <hr>
-                <h4>Dear <span id="sal"></span> <span id="lname"></span>,</h4>
+                <h3>Dear <span id="sal"></span> <span id="lname"></span>,</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-sm">
-                <h5>Our recommendation is:</h5>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm">
-                <h4 id="rec"></h4>
+                <h4>Our recommendation is:</h4>
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-sm">
-                <h7>Be safe!</h7>
+                <h3 id="rec"></h3>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <h6>Be safe!</h6>
             </div>
         </div>
         <div class="row">
             <div class="col-sm">
-                <h7>Thank you.</h7>
+                <h6>Thank you.</h6>
             </div>
         </div>
         <div class="row">
             <div class="col-sm">
-                <small>For more info about COVID-19, click <a
-                        href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19">here</a></small>
+                <h7>For more info about COVID-19, click <a
+                        href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19">here</a>
+                </h7>
             </div>
         </div>
     </div>
