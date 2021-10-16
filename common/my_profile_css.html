@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ellion Blessan's Profile</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="profile, student, leon, ellion, blessan, cv, portfolio">
+    <meta name="author" content="Ellion Blessan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/39f03edc73.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #cbf7e8;
+            margin: 0;
+            font-family: 'Spartan', sans-serif;
+        }
+
+        ul#menubar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #038f70;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li#menulink {
+            float: left;
+        }
+
+        li#menulink a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li#menulink a:hover {
+            background-color: #3bce95;
+        }
+
+        ul#contactbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #038f70;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        li#contactlink {
+            float: left;
+        }
+
+        li#contactlink a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li#contactlink a:hover {
+            background-color: #3bce95;
+        }
+
+        header {
+            background-color: #cbf7e8;
+            margin-top: 3.7%;
+        }
+
+        img#leonpic {
+            float: left;
+            padding: 15px;
+            background-color: #cbf7e8;
+            border-radius: 50px;
+            transition: transform 1s;
+            max-width: 100%;
+            height: auto;
+        }
+
+        img#leonpic:hover {
+            transform: rotateY(180deg);
+        }
+
+        div#profiletext {
+            padding: 15px;
+            text-align: justify;
+        }
+
+        div#skills {
+            clear: both;
+            background-image: linear-gradient(to left, #cbf7e8, #cbd0f7);
+            padding: 15px;
+            border-radius: 30px;
+        }
+
+        div#education {
+            padding: 15px;
+            background-image: linear-gradient(to right, #cbf7e8, #cbd0f7);
+            border-radius: 30px;
+        }
+
+        div#experience {
+            background-image: linear-gradient(to left, #cbf7e8, #cbd0f7);
+            padding: 15px;
+            border-radius: 30px;
+        }
+
+        div#games {
+            background-color: #cbf7e8;
+            padding: 15px;
+            margin-bottom: 3.7%;
+            overflow-x: auto;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            background-color: #cbd0f7;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px;
+            border-color: #cbf7e8;
+        }
+
+        p,
+        li {
+            line-height: 1.4;
+        }
+
+        h1,
+        h2 {
+            text-shadow: 1px 2px 5px white;
+        }
+
+        td#gamename:hover {
+            background-color: #3bce95;
+        }
+
+        img#skillimg {
+            float: right;
+            height: 230px;
+            width: 230px;
+            opacity: 0.1;
+            padding: 10px;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        a#gamename {
+            text-decoration: none;
+        }
+
+        a#gamename:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+        a#gamename:hover {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="summary">
+            <img id="leonpic" src="https://i.ibb.co/brpND2F/12399.jpg" height="360px" width="180px">
+            <div id="profiletext">
+                <h1>Ellion Blessan</h1>
+                <p>I am an undergraduate student at <span class="tooltip">ITS
+                        <span class="tooltiptext">Institut Teknologi Sepuluh Nopember</span>
+                    </span> Surabaya. Majoring in Information Systems, I have an interest in the field of <b>data
+                        science, web development, graphic design and video editing</b>. Hardworking and organized, I am
+                    eager improve my skills in the fields I have mentioned before in any way I can. Used to work in
+                    teams, I am adaptable to work and cooperate in new environments.</p>
+            </div>
+        </div>
+    </header>
+    <div id="skills">
+        <img id="skillimg"
+            src="https://www.pngkey.com/png/full/903-9033823_skill-computer-icons-computer-software-business-technology-black.png">
+        <h2>Things i have learned to use:</h2>
+        <ul>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Premiere Pro</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Microsoft Office</li>
+            <li>Java</li>
+            <li>MySQL</li>
+        </ul>
+    </div>
+    <div id="education">
+        <h2>I studied at:</h2>
+        <h3>
+            <details>
+                <summary>Institut Teknologi Sepuluh Nopember Surabaya</summary>
+                <p>Sepuluh Nopember Institute of Technology is an Indonesian public technological university located in
+                    Surabaya, East Java, with a strong emphasis on scientific, engineering, and vocational education
+                    system.</p>
+            </details> (September 2020-20...)
+        </h3>
+        <h4><i>Bachelor's Degree | Information Systems | GPA 3.73</i></h4>
+        <p>
+        <ul>
+            <li>Took part in Liga <span class="tooltip">PKM<span class="tooltiptext">Program Kreativitas
+                        Mahasiswa</span></span> ITS 2021</li>
+            <li>Competed in <span class="tooltip">ISCOMP<span class="tooltiptext">Information Systems
+                        Competition</span></span> 2021 smart city divison</li>
+        </ul>
+        </p>
+        <h3>St. Hendrikus Senior High School Surabaya<br>(2017-2020)</h3>
+        <h4><i>Natural Science Major</i></h4>
+        <ul>
+            <li>Graduated with highest exam grade in 6 subjects</li>
+            </p>
+    </div>
+    <div id="experience">
+        <h2>I have worked as a:</h2>
+        <h3>Design & Documentation Staff | Pelatihan Spiritual & Kebangsaan <span class="tooltip">KMK<span
+                    class="tooltiptext">Keluarga Mahasiswa Katolik</span></span> 2021 (July-August 2021)</h3>
+        <ul>
+            <li>Designed the event poster and participant's twibbon, also documented the whole 2-days event</li>
+        </ul>
+        <h3>Liaison Officer | KMK Graduation 123 (March 2021)</h3>
+        <ul>
+            <li>Coordinated with the the Public Relation-Secretarial Divison to send event informations to graduates and
+                to register the attendance of internal members</li>
+        </ul>
+        <h3>Committee Member | English in Action 2018 (December 2018)</h3>
+        <ul>
+            <li>Worked together in designing the 2-days event and looked after the event</li>
+        </ul>
+    </div>
+    <div id="games">
+        <h3>A list of games I have played</h3>
+        <table border>
+            <tr>
+                <th>Game Name</th>
+                <th>Genre</th>
+                <th>Platform</th>
+                <th>My Opinion</th>
+            </tr>
+            <tr>
+                <td><a id="gamename" href="https://genshin.mihoyo.com/en/">Genshin Impact</a></td>
+                <td>Open world RPG, Exploration, Gacha</td>
+                <td>PC, Mobile, PlayStation, Switch</td>
+                <td>Has an amazing plot, exploration rather boring, the gacha is addictive. Do not spend money or you
+                    will get sucked into this gacha black hole.</td>
+            </tr>
+            <tr>
+                <td><a id="gamename" href="https://osu.ppy.sh/home">osu!</a></td>
+                <td>Rythm</td>
+                <td>PC</td>
+                <td>Best pc rythm game. Beatmap collections are massive and they are built by players. You can build one
+                    too!</td>
+            </tr>
+            <tr>
+                <td><a id="gamename" href="https://playvalorant.com/">VALORANT</a></td>
+                <td>Competitive FPS</td>
+                <td>PC</td>
+                <td>Fun gameplay, still have emphasis on our aiming skills rather than focusing on character's abilites.
+                </td>
+            </tr>
+            <tr>
+                <td><a id="gamename" href="https://store.steampowered.com/app/739630/Phasmophobia/">Phasmophobia</a>
+                </td>
+                <td>VR, horror, survival puzzle</td>
+                <td>PC</td>
+                <td>Fun gameplay, especially with friends. Sad that I don't have a VR headset :(</td>
+            </tr>
+            <tr>
+                <td><a id="gamename" href="https://m.mobilelegends.com/en">Mobile Legends</a></td>
+                <td>MOBA</td>
+                <td>Mobile</td>
+                <td><em><b>Play with a team!</b></em> Otherwise, you will get stuck in Epic Tier.</td>
+            </tr>
+            <tr>
+                <td><a id="gamename" href="https://www.dota2.com/home">DOTA 2</a></td>
+                <td>MOBA</td>
+                <td>PC</td>
+                <td>Toxic SEA community. Play with a friend. Has a map creation system which most people don't know
+                    about.</td>
+            </tr>
+            <tr>
+                <td><a id="gamename"
+                        href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/">CSGO</a></td>
+                <td>Competitive FPS</td>
+                <td>PC</td>
+                <td>Fun with friends. Rage-inducing without friends. I miss this game after VALORANT.</td>
+            </tr>
+            <tr>
+                <td><a id="gamename" href="https://thewitcher.com/en/witcher3">The Witcher 3</a></td>
+                <td>Open world RPG</td>
+                <td>PC, PlayStation, Xbox</td>
+                <td>Best storyline for a video game. Fun gameplay. Finale made me cry.</td>
+            </tr>
+            <tr>
+                <td><a id="gamename" href="https://elderscrolls.bethesda.net/en/skyrim">The Elder Scrolls: Skyrim</a>
+                </td>
+                <td>Open world RPG</td>
+                <td>PC, Playstation, Xbox, Switch</td>
+                <td>Awesome storyline. Game mechanics a little confusing, but I can finish it, so do you. Has developer
+                    support for mods, this game has tons of them.</td>
+            </tr>
+        </table>
+    </div>
+    <ul id="menubar">
+        <li id="menulink"><a href="leon_profile_css.html#skills"><i class="fas fa-fist-raised"></i> My Skills</a> </li>
+        <li id="menulink"><a href="leon_profile_css.html#education"><i class="fas fa-graduation-cap"></i> My
+                Education</a> </li>
+        <li id="menulink"><a href="leon_profile_css.html#experience"><i class="fas fa-briefcase"></i> My Experience</a>
+        </li>
+        <li id="menulink"><a href="leon_profile_css.html#games"><i class="fas fa-gamepad"></i> My Games</a> </li>
+    </ul>
+    <footer id="contact">
+        <address>
+            <ul id="contactbar">
+                <li id="contactlink"><a href="https://en.wikipedia.org/wiki/Surabaya"><i
+                            class="fas fa-map-marker-alt"></i> Surabaya, Indonesia</a></li>
+                <li id="contactlink"><a href="http://wa.me/6282306071010"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                </li>
+                <li id="contactlink"><a href="https://www.linkedin.com/in/ellion-blessan/"><i
+                            class="fab fa-linkedin"></i> Linkedin</a></li>
+                <li id="contactlink"><a href="mailto:ellionblessan@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                </li>
+                <li id="contactlink"><a href="https://www.instagram.com/leleeoon/"><i class="fab fa-instagram"></i>
+                        Instagram</a></li>
+            </ul>
+        </address>
+    </footer>
+</body>
+
+</html>

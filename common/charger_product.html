@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Praktikum 1 Produk Bukalapak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        u {
+            border-bottom: 1px dashed #000;
+            text-decoration: none;
+        }
+
+        .container {
+            padding-top: 50px;
+        }
+
+        #dot {
+            color: #dddddd;
+        }
+
+        #price {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .col-sm#darkgray {
+            padding-top: 15px;
+            color: #636363;
+        }
+
+        #yellow {
+            color: #ffc53e;
+        }
+
+        #gray {
+            color: #bababa;
+        }
+
+        #link {
+            text-decoration: none;
+            color: black;
+            transition-duration: 1s;
+        }
+
+        #link:hover {
+            color: #ec0e49;
+        }
+
+        #link i:hover {
+            color: black;
+        }
+
+        .btn {
+            padding: 10px 14px;
+            transition-duration: 0s;
+        }
+
+        .btn-light {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .btn-light:hover {
+            background-color: #f5f5f5;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .btn-danger {
+            background-color: #ec0e49;
+        }
+
+        #btnrow div {
+            padding: 0 5px;
+        }
+
+        #btnrow {
+            padding: 0 10px;
+            margin-top: 20px;
+        }
+
+        #imgrow {
+            display: flex;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        #imgrow div {
+            padding: 0 2px;
+        }
+
+        #imgrow img {
+            border: 2px solid #f5f5f5;
+        }
+
+        #app {
+            margin-top: 25px;
+        }
+
+        #app div.col-sm-10 {
+            padding: 0;
+        }
+
+        #app div.col-sm {
+            padding-right: 0;
+        }
+
+        #likeshare {
+            padding-top: 14px;
+        }
+
+        /* #likeshare span:hover {
+            color: #ec0e49;
+        }
+
+        #likeshare span {
+            transition-duration: 1s;
+        } */
+
+        #rating {
+            text-decoration: none;
+            color: black;
+        }
+
+        #img4 {
+            max-height: 87.83%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-fluid" src="https://s4.bukalapak.com/img/41347110292/large/data.jpeg.webp">
+                <div class="col-sm" id="imgrow">
+                    <div class="col-sm">
+                        <img class="img-fluid rounded"
+                            src="https://s4.bukalapak.com/img/41347110292/large/data.jpeg.webp">
+                    </div>
+                    <div class="col-sm">
+                        <img class="img-fluid rounded"
+                            src="https://s1.bukalapak.com/img/64094917192/large/data.jpeg.webp">
+                    </div>
+                    <div class="col-sm">
+                        <img class="img-fluid rounded"
+                            src="https://s2.bukalapak.com/img/73094917192/large/data.jpeg.webp">
+                    </div>
+                    <div class="col-sm">
+                        <img class="img-fluid rounded" id="img4"
+                            src="https://s1.bukalapak.com/img/67094917192/large/data.jpeg.webp">
+                    </div>
+                    <div class="col-sm">
+                        <img class="img-fluid rounded"
+                            src="https://s1.bukalapak.com/img/17984917192/large/data.jpeg.webp">
+                    </div>
+                </div>
+                <div class="row" id="likeshare">
+                    <div class="col-sm text-center border-right">
+                        <a href="#" id="link"><i class="far fa-heart"></i>&nbsp;&nbsp;&nbsp;<span>Favoritkan</span></a>
+                    </div>
+                    <div class="col-sm text-center">
+                        <a href="#" id="link"><i class="fas fa-share-alt"></i>&nbsp;&nbsp;&nbsp;<span>Bagikan</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <h4>
+                            MCDODO CH-717 TRAVEL ADAPTOR CHARGER LED DISPLAY PD FAST CHARGING POWER DELIVERY QUICK
+                            CHARGE QC 3.0
+                        </h4>
+                    </div>
+                    <div class="col-sm">
+                        <img class="img-fluid"
+                            src="https://s0.bukalapak.com/ast/bazaar-dweb/base/images/emblem-new-super-seller.svg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="#" id="rating"><small id="yellow"><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></small>
+                            25 Ulasan &nbsp;<span id="dot">•</span></a>&nbsp; 26 Terjual
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm" id="price">
+                        <h4><b>Rp125.000</b></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">Tersedia > 10 stok barang</div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-2"><b>Pengiriman</b></div>
+                    <div class="col-sm-2 border-right"><small id="gray">Lokasi Pelapak</small><br>Jakarta Utara</div>
+                    <div class="col-sm"><small id="gray">Tujuan Pengiriman</small><br>Pasar Minggu, Jakarta
+                        Selatan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small><u><a href="#" id="link">Ubah
+                                    Alamat</a></u></small></div>
+                </div>
+                <hr>
+                <div class="row" id="btnrow">
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-light btn-block"><i class="far fa-comment-dots"></i>
+                            <b>Chat</b></button>
+                    </div>
+                    <div class="col-sm-5" id="cart">
+                        <button type="button" class="btn btn-light btn-block"><i class="fas fa-shopping-cart"></i>
+                            <b>Masukkan Keranjang</b></button>
+                    </div>
+                    <div class="col-sm-5">
+                        <button type="button" class="btn btn-danger btn-block"><b>Beli Sekarang</b></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm" id="darkgray">
+                        <small><i class="fas fa-info-circle"></i>&nbsp;&nbsp;&nbsp;Bayar sebelum jam 16:00 WIB agar
+                            barang dikirim hari
+                            ini</small>
+                    </div>
+                </div>
+                <hr>
+                <div class="row" id="app">
+                    <div class="col-sm">
+                        <img class="img-fluid" src="https://s0.bukalapak.com/elysium/images/illustration-qr.png">
+                    </div>
+                    <div class="col-sm-10">
+                        <b>Diskon menanti kamu di App!</b><br><small id="gray">Ada banyak voucher untuk kamu
+                            pakai.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
