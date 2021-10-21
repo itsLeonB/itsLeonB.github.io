@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Leon's Customized Dropdowns</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      padding: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Education</h2>
+    <p>I am a student of ITS Surabaya. I got accepted at Septermber of 2020.</p>
+    <p>My major is Information Systems.</p>
+    <p>I am currently on my 3rd semester. Here is a list of subjects I am learning.</p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-success">High School</button>
+      <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="hendrikus.sch.id">Senior</a>
+        <a class="dropdown-item" href="https://smp-carolus-sby.tarakanita.sch.id/">Junior</a>
+      </div>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">1st semester</button>
+      <button type="button" class="btn btn-primary">2nd semester</button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Subjects
+        </button>
+        <div class="dropdown-menu">
+          <h5 class="dropdown-header">3rd semester subjects</h5>
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Statistics">Statistics</a>
+          <a class="dropdown-item disabled" href="#">Database Systems</a>
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Web_development">Web Programming</a>
+          <a class="dropdown-item" href="https://www.easytechjunkie.com/what-is-it-process-management.htm">IT Process Management</a>
+          <a class="dropdown-item" href="https://www.softwareengineerinsider.com/careers/software-requirements-engineering.html">Software Requirements Engineering</a>
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Business_process_management">Business Process Management</a>
+          <div class="dropdown-divider"></div>
+          <h5 class="dropdown-header">Upper semester subjects</h5>
+          <a class="dropdown-item" href="https://advancedbsys.com/network-design/">Computer Network Design & Management</a>
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Operations_research">Operational Research</a>
+          <a class="dropdown-item disabled" href="#">IT Service Management</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
