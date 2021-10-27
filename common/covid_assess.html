@@ -210,7 +210,7 @@
                                         $("#rec").text("Your symptoms may or may not be related to COVID-19.");
                                     }
                                 } else if (score == 1) {
-                                    if (ansList[0] == "true" && ansList[1] == "true") {
+                                    if (ansList[0] == "true" || ansList[1] == "true") {
                                         $("#rec").text("Self-quarantine at home.");
                                     } else if (ansList[2] == "true") {
                                         $("#rec").text("Your symptoms may or may not be related to COVID-19.");
