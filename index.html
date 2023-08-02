@@ -2,102 +2,290 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-    <div class="container" style="padding: 3%">
-        <div class="row">
-            <h1>
-                Hello 👋 <br>My name is Ellion Blessan<br>
-            </h1>
-            <h4>I build machine learning models and backend systems</h4>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Ellion Blessan</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="assets/img/profile.jpg" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+            </ul>
         </div>
-        <div class="row" style="padding: 4%">
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Workout Recommender Systems</h5>
-                        <p class="card-text">A system that recommends three
-                            most similar workout for a selected workout. Deployed with FastAPI.</p>
-                        <a href="https://github.com/itsLeonB/workout-recommender" class="card-link"
-                            target="_blank">GitHub
-                            Repository</a>
-                            <a href="https://github.com/itsLeonB/workout-recommender-api" class="card-link"
-                            target="_blank">API endpoint</a>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    <span class="text-primary">Ellion</span> Blessan
+                </h1>
+                <div class="subheading mb-5">
+                    Surabaya, Indonesia · (62) 823 0607 1010 ·
+                    <a href="mailto:ellionblessan@gmail.com">ellionblessan@gmail.com</a>
+                </div>
+                <p class="lead mb-5">Passionate about the ever-evolving field of Data Science, I possess a strong
+                    enthusiasm for exploring and leveraging data to drive meaningful insights and make informed
+                    decisions. With a quick-learning ability and excellent organizational skills, I thrive in dynamic
+                    environments where I can apply my analytical mindset to solve complex problems. Eager to expand my
+                    knowledge and skills, I actively seek opportunities to deepen my understanding of data analytics,
+                    machine learning, and data visualization. Committed to continuous growth, I aim to contribute my
+                    technical expertise and contribute to the development of innovative solutions in the realm of
+                    data-driven decision-making.</p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/ellion-blessan/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/itsLeonB"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Projects-->
+        <section class="resume-section" id="projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Projects</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Workout Recommender Systems</h3>
+                        <div class="subheading mb-3">Recommender Systems (Machine Learning)</div>
+                        <p>
+                            A system that recommends three most similar workout for a selected workout. Deployed with
+                            FastAPI.
+                        </p>
+                        <div class="flex-shrink-0">
+                            <a href="https://github.com/itsLeonB/workout-recommender" target="_blank"
+                                class="text-primary">GitHub repository</a> |
+                            <a href="https://github.com/itsLeonB/workout-recommender-api" target="_blank"
+                                class="text-primary">API endpoint</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">User Review Sentiment Analysis</h3>
+                        <div class="subheading mb-3">Natural Language Processing (Machine Learning)</div>
+                        <p>
+                            A sentiment analysis of by.U mobile app user reviews on Google Play.
+                        </p>
+                        <div class="flex-shrink-0">
+                            <a href="https://github.com/itsLeonB/machine-learning-practice/blob/main/natural-language-processing/byu_reviews_sentiment_analysis.ipynb"
+                                target="_blank" class="text-primary">Jupyter notebook</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Chest X-ray classification</h3>
+                        <div class="subheading mb-3">Computer Vision (Machine Learning)</div>
+                        <p>
+                            A convolutional neural network that classifies chest x-ray scans. Deployed with Flask.
+                        </p>
+                        <div class="flex-shrink-0">
+                            <a href="https://github.com/itsLeonB/covid-19-ann" target="_blank"
+                                class="text-primary">COVID-19 classification</a> |
+                            <a href="https://github.com/itsLeonB/tbc-ann" target="_blank" class="text-primary">TBC
+                                classification</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Academic Information Systems</h3>
+                        <div class="subheading mb-3">Laravel (Backend Development)</div>
+                        <p>
+                            A web-based Academic Information Systems. Built collaboratively using Laravel framework.
+                        </p>
+                        <div class="flex-shrink-0">
+                            <a href="https://github.com/fathoor/SIAKAD" target="_blank" class="text-primary">GitHub
+                                repository</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Machine Learning Models</h3>
+                        <p>
+                            A repository of ML models I have built.
+                        </p>
+                        <div class="flex-shrink-0">
+                            <a href="https://github.com/itsLeonB/machine-learning-practice" target="_blank"
+                                class="text-primary">GitHub
+                                repository</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Data Analytics</h3>
+                        <p>
+                            A repository of Data Analytics I have done with Jupyter Notebook.
+                        </p>
+                        <div class="flex-shrink-0">
+                            <a href="https://github.com/itsLeonB/data-analytics-practice" target="_blank"
+                                class="text-primary">GitHub
+                                repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Experience</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Machine Learning Distinction Graduate</h3>
+                        <div class="subheading mb-3">Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</div>
+                        <p>
+                        <ul>
+                            <li>Utilized TensorFlow for building deep learning models</li>
+                            <li>Deployed TensorFlow models with TensorFlow.js, TensorFlow Lite, and TensorFlow
+                                Serving</li>
+                            <li>Utilized TensorFlow and FastAPI to build a workout recommender system and its API
+                                endpoint</li>
+                            <li>Collaborated with a diverse team to build an AI-enabled fitness assistant mobile app
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">February 2023 - July 2023</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Institut Teknologi Sepuluh Nopember Surabaya</h3>
+                        <div class="subheading mb-3">Bachelor's Degree</div>
+                        <div>Information Systems - Data Engineering and Business Intelligence Track</div>
+                        <p>GPA: 3.81</p>
+                        <p>
+                        <ul>
+                            <li>Worked together to build a COVID-19 and TBC classifier using TensorFlow and deployed
+                                using
+                                Flask</li>
+                            <li>Designed and developed together a Performance Analytics Dashboard with PowerBI
+                                coupled with ETL pipeline using Pentaho</li>
+                            <li>Collaborated with fellow students in building a web-based Academic Information
+                                Systems using PHP and Laravel Framework</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">September 2020 - Present</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Programming Languages & Tools</div>
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item"><i class="fa-brands fa-python"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                    <li class="list-inline-item"><i class="fa-brands fa-php"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-r-project"></i></li>
+                </ul>
+                <div class="subheading mb-3">Soft Skills</div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Analytical thinking
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Problem solving
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Adaptable
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Quick learner
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Organized
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
 
-                    </div>
-                </div>
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards & Certifications</h2>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-certificate text-warning"></i></i></span>
+                        Google Data Analytics Certified
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Bangkit Academy 2023 Batch 1 - Machine Learning (Graduated with Distinction)
+                    </li>
+                </ul>
             </div>
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">User Review Sentiment Analysis</h5>
-                        <p class="card-text">A sentiment analysis of by.U mobile app user reviews on Google Play.</p>
-                        <a href="https://github.com/itsLeonB/machine-learning-practice/blob/main/natural-language-processing/byu_reviews_sentiment_analysis.ipynb"
-                            class="card-link" target="_blank">Jupyter Notebook</a>
-                    </div>
-                </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Interests</h2>
+                <p>Apart from professional work, I spend my free time playing video games and watching movies. I love
+                    role-playing games that immerse players in the game's story. I also prefer to watch movie or series
+                    whilst having dinner.</p>
+                <p class="mb-0">I also enjoy playing badminton as a hobby. I prefer badminton because it have minimal
+                    physical contact with other players.</p>
             </div>
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Chest X-ray classification</h5>
-                        <p class="card-text">A convolutional neural network that classifies chest x-ray scans. Deployed with Flask.</p>
-                        <a href="https://github.com/itsLeonB/covid-19-ann" class="card-link" target="_blank">COVID-19 classification</a>
-                        <br><a href="https://github.com/itsLeonB/tbc-ann" class="card-link"
-                            target="_blank">TBC Classification</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row" style="padding: 4%; padding-top: 0%">
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Academic Information Systems</h5>
-                        <p class="card-text">A web-based Academic Information Systems. Built collaboratively.</p>
-                        <a href="https://github.com/fathoor/SIAKAD"
-                            class="card-link" target="_blank">GitHub Repository</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Machine Learning Models</h5>
-                        <p class="card-text">A repository of ML models I have built.</p>
-                        <a href="https://github.com/itsLeonB/machine-learning-practice" class="card-link" target="_blank">GitHub
-                            Repository</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Data Analytics</h5>
-                        <p class="card-text">A repository of Data Analytics I have done with Jupyter Notebook.</p>
-                        <a href="https://github.com/itsLeonB/data-analytics-practice" class="card-link" target="_blank">GitHub
-                            Repository</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
+        <hr class="m-0" />
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
