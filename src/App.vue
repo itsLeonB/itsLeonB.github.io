@@ -1,6 +1,7 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
 import Projects from "./components/Projects.vue";
+import Experience from "./components/Experience.vue";
+import Certification from "./components/Certification.vue";
 </script>
 
 <template>
@@ -33,13 +34,22 @@ import Projects from "./components/Projects.vue";
         </button>
       </div>
       <div class="hidden sm:flex sm:gap-x-12">
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+        <a
+          href="#"
+          @click="scrollToAbout"
+          class="text-sm font-semibold leading-6 text-gray-900"
           >About</a
         >
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+        <a
+          href="#"
+          @click="scrollToPortfolio"
+          class="text-sm font-semibold leading-6 text-gray-900"
           >Portfolio</a
         >
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+        <a
+          href="#"
+          @click="scrollToContact"
+          class="text-sm font-semibold leading-6 text-gray-900"
           >Contact</a
         >
       </div>
@@ -78,17 +88,17 @@ import Projects from "./components/Projects.vue";
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
               <a
-                href="#"
+                href="#about"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >About</a
               >
               <a
-                href="#"
+                href="#portfolio"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >Portfolio</a
               >
               <a
-                href="#"
+                href="#contact"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >Contact</a
               >
@@ -101,17 +111,6 @@ import Projects from "./components/Projects.vue";
 
   <section id="home" class="h-screen flex items-center justify-center">
     <div class="mx-auto max-w-3xl">
-      <!-- <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div
-          class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
-        >
-          Announcing our next round of funding.
-          <a href="#" class="font-semibold text-indigo-600"
-            ><span class="absolute inset-0" aria-hidden="true"></span>Read more
-            <span aria-hidden="true">&rarr;</span></a
-          >
-        </div>
-      </div> -->
       <div class="text-center">
         <div
           class="flex flex-col lg:flex-row items-center justify-center gap-10"
@@ -134,21 +133,11 @@ import Projects from "./components/Projects.vue";
             </p>
           </div>
         </div>
-        <!-- <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a
-            href="#"
-            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >Get started</a
-          >
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-            >Learn more <span aria-hidden="true">→</span></a
-          >
-        </div> -->
       </div>
     </div>
   </section>
 
-  <section id="about" class="h-screen flex items-center justify-center">
+  <section id="about" class="h-screen mb-9 flex items-center justify-center">
     <div class="mx-auto max-w-5xl">
       <div class="text-left">
         <div class="flex flex-col gap-10">
@@ -343,18 +332,85 @@ import Projects from "./components/Projects.vue";
     </div>
   </section>
 
-  <section id="portfolio" class="h-screen flex items-center justify-center">
-    <div class="mx-auto w-full text-left">
+  <section id="portfolio" class="flex items-center justify-center">
+    <div class="mx-auto max-w-5xl text-left">
       <div class="flex flex-col gap-10">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900">
-          Projects
-        </h2>
-        <div class="flex sm:flex-row justify-between">
-          <Projects
-            v-for="(project, index) in projects"
-            :key="index"
-            :project="project"
-          />
+        <div class="flex flex-col gap-5">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+            Projects
+          </h2>
+          <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
+            <div class="flex flex-nowrap lg:mx-10 md:mx-5 mx-2 space-x-4">
+              <Projects
+                v-for="(project, index) in projects"
+                :key="index"
+                :project="project"
+                class="inline-block p-6"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+            Experience
+          </h2>
+          <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
+            <div class="flex flex-nowrap lg:mx-10 md:mx-5 mx-2 space-x-4">
+              <Experience
+                v-for="(experience, index) in experiences"
+                :key="index"
+                :experience="experience"
+                class="inline-block p-6"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+            Certifications
+          </h2>
+          <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
+            <div class="flex flex-nowrap lg:mx-10 md:mx-5 mx-2 space-x-4">
+              <Certification
+                v-for="(certification, index) in certifications"
+                :key="index"
+                :certification="certification"
+                class="inline-block p-6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="flex m-9">
+    <div class="mx-auto max-w-5xl text-left m-9">
+      <div class="flex flex-col gap-10 m-9">
+        <div class="flex flex-col gap-9 m-9 items-center justify-center">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+            Contact me 👇
+          </h2>
+          <div class="flex flex-row gap-4">
+            <div
+              class="relative rounded-full px-5 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+            >
+              <a
+                href="mailto:ellionblessan@gmail.com"
+                class="font-semibold text-indigo-600"
+                ><span class="absolute inset-0" aria-hidden="true"></span
+                >ellionblessan@gmail.com</a
+              >
+            </div>
+            <div
+              class="relative rounded-full px-5 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+            >
+              <a class="font-semibold text-indigo-600"
+                ><span class="absolute inset-0" aria-hidden="true"></span>+62
+                823-0607-1010</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -365,6 +421,8 @@ import Projects from "./components/Projects.vue";
 export default {
   components: {
     Projects,
+    Certification,
+    Experience,
   },
 
   data() {
@@ -373,25 +431,64 @@ export default {
 
       projects: [
         {
-          title: "Project 1",
-          description: "This is a description of project 1",
-          tags: ["tag1", "tag2"],
-          repository: "repo",
-          link: "demo",
+          title: "Electronic Medical Record System",
+          description:
+            "A web-based Electronic Medical Record systems that complies and integrated with Indonesia's FHIR implementation (SATUSEHAT).",
+          tags: ["Laravel", "FHIR", "Back-end", "API", "Healthcare"],
+          repository: "https://github.com/itsLeonB/rekam-medis-elektronik",
+          link: "https://rme.digitalise.biz.id",
         },
         {
-          title: "Project 2",
-          description: "This is a description of project 2",
-          tags: ["tag1", "tag2"],
-          repository: "",
-          link: "",
+          title: "RemajaSehat",
+          description:
+            "An Android app for Posyandu management and female teenage health monitoring to prevent stunting in babies.",
+          tags: ["Android", "Kotlin", "CRUD", "Healthcare"],
+          repository: "https://github.com/itsLeonB/si-capstone",
         },
         {
-          title: "Project 3",
-          description: "This is a description of project 3",
-          tags: ["tag1", "tag2"],
-          repository: "",
-          link: "",
+          title: "Workout Recommender",
+          description:
+            "A recommender system for workout exercises based on text descriptions.",
+          tags: ["TensorFlow", "BERT", "Machine Learning", "NLP", "FastAPI"],
+          repository: "https://github.com/itsLeonB/workout-recommender",
+        },
+        {
+          title: "COVID-19 Classifier",
+          description:
+            "A deep learning model for classifying COVID-19 from chest X-ray images.",
+          tags: ["TensorFlow", "Computer Vision", "Deep Learning", "Flask"],
+          repository: "https://github.com/itsLeonB/workout-recommender",
+        },
+      ],
+
+      experiences: [
+        {
+          company: "Bangkit Academy 2023 by Google, GoTo, Traveloka",
+          position: "Machine Learning Cohort (Graduated with Distinction)",
+          duration: "February 2023 - July 2023",
+        },
+        {
+          company:
+            "Information Systems Department, Sepuluh Nopember Institute of Technology",
+          position: "Predictive Modelling and Analytics Teaching Assistant",
+          duration: "September 2023 - November 2023",
+        },
+      ],
+
+      certifications: [
+        {
+          title: "Certified TensorFlow Developer",
+          svgSrc: "/tensorflow.svg",
+        },
+        {
+          title: "Google Data Analytics",
+          svgSrc:
+            "https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg",
+        },
+        {
+          title: "Google IT Automation",
+          svgSrc:
+            "https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg",
         },
       ],
     };
@@ -400,11 +497,32 @@ export default {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
+
+    scrollToAbout() {
+      const element = document.getElementById("about");
+      element.scrollIntoView({ behavior: "smooth" });
+    },
+    scrollToPortfolio() {
+      const element = document.getElementById("portfolio");
+      element.scrollIntoView({ behavior: "smooth" });
+    },
+    scrollToContact() {
+      const element = document.getElementById("contact");
+      element.scrollIntoView({ behavior: "smooth" });
+    },
   },
 };
 </script>
 
 <style scoped>
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
