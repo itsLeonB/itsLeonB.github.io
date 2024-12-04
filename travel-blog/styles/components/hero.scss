@@ -1,0 +1,60 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://s3-alpha-sig.figma.com/img/7eed/e288/ec725dce13bc784b442408dbf92332f7?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WCGp3CDieR0Vfd4VYVwUMk4cNMUUv~ZrUV~hBonDUCc1QXgvg4IOtitvZ4HF6dH~uUYDjvAaAt3WfSF7SoX9YzjW-5K3wWftvuVn8zNH9GP-xgqIzLLRsFc~rYDIGUv7ZVP3zK-RcyKDoXYj3Yh5KydOuSyLJm-m1mc5FLS-8Liyf8Jp5xJuu-k07wgm92CYgKEQoCDE9ADiohK9JpNDckGjzpsemj4Bfw6lJ2vSSQH8uCPv-bEQxyL6njtrNpp6KhFDk8gLlU6PoNr6MMqaCCXkccFsK3~7OeBw3la~DGO8n0VkGqlmtiJTizeuNykpqbhoEUYdP5oNXPNJ9ieU4w__');
+    background-size: cover;
+    gap: 32px;
+    text-wrap: balance;
+}
+
+.hero__title {
+    font-family: $font-montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.hero__separator {
+    width: 100px;
+    height: 1px;
+    background-color: white;
+}
+
+.hero__subtitle {
+    font-family: $font-open-sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    max-width: 30vw;
+}
+
+.hero__button {
+    border: 1px solid $primary;
+    background: none;
+    font-family: $font-open-sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    padding: 8px 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+}

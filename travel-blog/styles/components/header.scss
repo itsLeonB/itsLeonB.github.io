@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    justify-content: space-between;
+    padding: 26px $side-gutter;
+    background-color: rgba(black, 0.2);
+    align-items: center;
+    color: white;
+
+    span {
+        color: $primary;
+    }
+}
+
+.header__nav {
+    display: flex;
+    gap: 23px;
+
+    a {
+        font-family: $font-open-sans;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19.07px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+
+        &:hover {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
+}
+
+.header__logo {
+    font-family: $font-open-sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
