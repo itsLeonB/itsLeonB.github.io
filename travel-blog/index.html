@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
   <link href="styles/index.css" rel="stylesheet">
 </head>
@@ -20,8 +20,8 @@
     <a href="#" class="header__logo"><span>TRAVEL</span>BLOG</a>
     <nav>
       <ul class="header__nav">
-        <li><a href="#">Articles</a></li>
-        <li><a href="#">Sign In</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#sign-in">Sign In</a></li>
       </ul>
     </nav>
   </header>
@@ -31,9 +31,9 @@
     <p class="hero__subtitle">Insights, Inspiration, and practical advice on a wide range of topics. Whether you're
       looking for the latest
       trends, expert tips, or simply a bit of inspiration to brighten your day!</p>
-    <button class="hero__button">Scroll to articles</button>
+    <a class="hero__button" href="#articles">Scroll to articles</a>
   </main>
-  <section class="articles">
+  <section class="articles" id="articles">
     <header>
       <h2 class="articles__title">Latest articles</h2>
       <p class="articles__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -99,7 +99,7 @@
       </ul>
     </main>
   </section>
-  <section class="sign-in">
+  <section class="sign-in" id="sign-in">
     <h2>Sign in form</h2>
     <form action="" class="sign-in__form">
       <div>
@@ -137,35 +137,36 @@
       </div>
     </form>
   </section>
-  <footer>
-    <div>
+  <footer class="footer">
+    <div class="footer__sitemap">
       <div>
         <h3>Contact the Publisher</h3>
         <ul>
-          <li><a href="">example@email.com</a></li>
-          <li><a href="">+944 450 904 505</a></li>
+          <li><a href="mailto:example@email.com" target="_blank">example@email.com</a></li>
+          <li><a href="tel:+944450904505" target="_blank">+944 450 904 505</a></li>
         </ul>
       </div>
       <div>
         <h3>Explore</h3>
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Partners</a></li>
-          <li><a href="">Job Opportunities</a></li>
-          <li><a href="">Advertise</a></li>
-          <li><a href="">Membership</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#job-opportunities">Job Opportunities</a></li>
+          <li><a href="#advertise">Advertise</a></li>
+          <li><a href="#membership">Membership</a></li>
         </ul>
       </div>
       <div>
         <h3>Headquarter</h3>
         <ul>
-          <li><a href="">1999 Middleville, NY 1001, New York USA</a></li>
+          <li><a href="https://maps.app.goo.gl/hDPAqxPTBLC6eqZGA" target="_blank">1999 Middleville,<br>NY 1001, New
+              York<br>USA</a></li>
         </ul>
       </div>
     </div>
-    <div>
+    <div class="footer__end">
       <p>2024 | Travel Blog</p>
-      <a href="">Subscribe Now</a>
+      <a href="#subscribe">Subscribe Now</a>
     </div>
   </footer>
 </body>

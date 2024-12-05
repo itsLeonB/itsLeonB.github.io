@@ -6,6 +6,12 @@
     align-items: center;
     color: $black;
     padding: $side-gutter;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
 }
 
 .articles__title {
