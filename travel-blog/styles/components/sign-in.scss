@@ -7,6 +7,11 @@
     justify-content: center;
     align-items: center;
     font-family: $font-open-sans;
+
+    @include media($mobile) {
+        padding: 34px $side-gutter-small 54px $side-gutter-small;
+        gap: 27px;
+    }
 }
 
 .sign-in__title {
@@ -16,6 +21,16 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+
+    @include media($mobile) {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27.24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: 100%;
+    }
 }
 
 .sign-in__form {
@@ -24,11 +39,20 @@
     gap: 48px;
     width: 100%;
 
+    @include media($mobile) {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
     div {
         display: flex;
         flex-direction: column;
         gap: 17px;
         height: 100%;
+
+        @include media($mobile) {
+            gap: 24px;
+        }
     }
 
     label {
@@ -79,6 +103,10 @@
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 
+        @include media($mobile) {
+            width: 100%;
+        }
+
         &:hover {
             background-color: darken($primary, 10%);
             transform: scale(1.05);
@@ -119,6 +147,10 @@
     gap: 14px;
     flex: 0 1 auto;
     width: fit-content;
+
+    @include media($mobile) {
+        gap: 6px;
+    }
 
     input[type="checkbox"] {
         width: 20px;

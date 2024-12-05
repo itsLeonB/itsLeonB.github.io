@@ -9,6 +9,12 @@
     background-size: cover;
     gap: 32px;
     text-wrap: balance;
+
+    @include media($mobile) {
+        padding: 87px $side-gutter-small 59px $side-gutter-small;
+        height: fit-content;
+        gap: 24px;
+    }
 }
 
 .hero__title {
@@ -19,6 +25,15 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+
+    @include media($mobile) {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 28.04px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
 }
 
 .hero__separator {
@@ -36,6 +51,16 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     max-width: 30vw;
+
+    @include media($mobile) {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        max-width: 90vw;
+    }
 }
 
 .hero__button {
@@ -56,5 +81,9 @@
     &:hover {
         transform: scale(1.05);
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    @include media($mobile) {
+        padding: 8px 24px;
     }
 }

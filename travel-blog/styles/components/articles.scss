@@ -7,10 +7,19 @@
     color: $black;
     padding: $side-gutter;
 
+    @include media($mobile) {
+        padding: 33px $side-gutter-small;
+        gap: 24px;
+    }
+
     header {
         display: flex;
         flex-direction: column;
         gap: 11px;
+
+        @include media($mobile) {
+            gap: 6px;
+        }
     }
 }
 
@@ -22,6 +31,15 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+
+    @include media($mobile) {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24.38px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
 }
 
 .articles__subtitle {
@@ -32,6 +50,15 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+
+    @include media($mobile) {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
 }
 
 .articles__nav {
@@ -45,6 +72,15 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     margin-bottom: 24px;
+
+    @include media($mobile) {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
 
     li.active {
         color: $primary;
@@ -64,6 +100,17 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+
+    @include media($mobile) {
+        grid-template-columns: 310px;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+
+        li {
+            width: fit-content;
+        }
+    }
 }
 
 .articles__card {

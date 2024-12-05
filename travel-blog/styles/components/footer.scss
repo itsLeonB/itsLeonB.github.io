@@ -9,6 +9,17 @@
     gap: 192px;
     background-color: #212529;
 
+    @include media($mobile) {
+        flex-direction: column;
+        gap: 44px;
+        text-align: center;
+        padding: 43px $side-gutter-small;
+
+        div {
+            align-items: center;
+        }
+    }
+
     h3 {
         font-size: 18px;
         font-weight: 700;
@@ -46,6 +57,15 @@
     padding: 31px $side-gutter;
     display: flex;
     justify-content: space-between;
+
+    @include media($mobile) {
+        flex-direction: column-reverse;
+        gap: 9px;
+        text-align: center;
+        padding: 18px $side-gutter-small;
+        justify-content: center;
+        align-items: center;
+    }
 
     a {
         font-size: 14px;

@@ -13,6 +13,10 @@
     span {
         color: $primary;
     }
+
+    @include media($mobile) {
+        padding: 16px $side-gutter-small;
+    }
 }
 
 .header__nav {
@@ -32,6 +36,15 @@
         &:hover {
             color: $primary;
         }
+
+        @include media($mobile) {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 16.34px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
     }
 }
 
@@ -47,5 +60,15 @@
 
     &:hover {
         transform: scale(1.05);
+    }
+
+    @include media($mobile) {
+        font-family: $font-spartan;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 15.68px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
     }
 }
