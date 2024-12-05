@@ -27,11 +27,10 @@
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
-        transition: color 0.3s ease, text-decoration 0.3s ease;
+        transition: color 0.3s ease;
 
         &:hover {
             color: $primary;
-            text-decoration: underline;
         }
     }
 }
@@ -44,4 +43,9 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }
