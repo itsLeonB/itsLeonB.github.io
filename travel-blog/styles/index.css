@@ -246,4 +246,151 @@ a {
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+}
+
+.sign-in {
+  background-color: #EFEFEF;
+  padding: 68px 215px 83px 215px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.sign-in__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.sign-in__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  width: 100%;
+}
+.sign-in__form div {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  height: 100%;
+}
+.sign-in__form label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.sign-in__form input,
+.sign-in__form textarea {
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  border: 1px solid #495057;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.sign-in__form input:hover,
+.sign-in__form textarea:hover {
+  border-color: #D4A373;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.sign-in__form input:focus,
+.sign-in__form textarea:focus {
+  border-color: #D4A373;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.sign-in__form button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: white;
+  background-color: #D4A373;
+  padding: 8px 134px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sign-in__form button:hover {
+  background-color: #c8894c;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sign-in__form__label-block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sign-in__form__label-textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+}
+.sign-in__form__label-textarea textarea {
+  height: 100%;
+  padding: 8px 14px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  border: 1px solid #495057;
+}
+
+.sign-in__form__label-inline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 0 1 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.sign-in__form__label-inline input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #495057;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sign-in__form__label-inline input[type=checkbox]:hover {
+  border-color: #D4A373;
+}
+.sign-in__form__label-inline input[type=checkbox]:checked {
+  background-color: #D4A373;
 }/*# sourceMappingURL=index.css.map */
