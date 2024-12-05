@@ -1,0 +1,74 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://picsum.photos/1920/1080');
+    background-size: cover;
+    gap: 32px;
+    text-wrap: balance;
+
+    @include media($mobile) {
+        padding: 87px $side-gutter-small 59px $side-gutter-small;
+        height: fit-content;
+        gap: 24px;
+    }
+}
+
+.hero__title {
+    font-family: $font-montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.88px;
+    text-align: center;
+
+    @include media($mobile) {
+        font-size: 23px;
+        line-height: 28.04px;
+    }
+}
+
+.hero__separator {
+    width: 100px;
+    height: 1px;
+    background-color: white;
+}
+
+.hero__subtitle {
+    font-family: $font-open-sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    max-width: 30vw;
+
+    @include media($mobile) {
+        font-size: 13px;
+        max-width: 90vw;
+    }
+}
+
+.hero__button {
+    border: 1px solid $primary;
+    background: none;
+    font-family: $font-open-sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    padding: 8px 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    @include media($mobile) {
+        padding: 8px 24px;
+    }
+}
