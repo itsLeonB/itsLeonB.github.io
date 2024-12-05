@@ -3,6 +3,8 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 li {

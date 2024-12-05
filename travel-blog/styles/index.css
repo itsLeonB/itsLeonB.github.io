@@ -3,6 +3,9 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }
 
 li {
@@ -45,9 +48,6 @@ a {
   font-weight: 700;
   line-height: 19.07px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   transition: color 0.3s ease;
 }
 .header__nav a:hover {
@@ -56,12 +56,7 @@ a {
 @media (max-width: 768px) {
   .header__nav a {
     font-size: 12px;
-    font-weight: 700;
     line-height: 16.34px;
-    text-align: left;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
   }
 }
 
@@ -71,9 +66,6 @@ a {
   font-weight: 700;
   line-height: 27.24px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   transition: transform 0.3s ease;
 }
 .header__logo:hover {
@@ -83,12 +75,7 @@ a {
   .header__logo {
     font-family: "Spartan", sans-serif;
     font-size: 14px;
-    font-weight: 700;
     line-height: 15.68px;
-    text-align: left;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
   }
 }
 
@@ -119,19 +106,11 @@ a {
   font-weight: 700;
   line-height: 43.88px;
   text-align: center;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
 }
 @media (max-width: 768px) {
   .hero__title {
     font-size: 23px;
-    font-weight: 700;
     line-height: 28.04px;
-    text-align: center;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
   }
 }
 
@@ -147,20 +126,11 @@ a {
   font-weight: 400;
   line-height: 20px;
   text-align: center;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   max-width: 30vw;
 }
 @media (max-width: 768px) {
   .hero__subtitle {
     font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
     max-width: 90vw;
   }
 }
@@ -173,9 +143,6 @@ a {
   font-weight: 700;
   line-height: 25px;
   text-align: center;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   color: white;
   padding: 8px 100px;
   cursor: pointer;
@@ -223,19 +190,11 @@ a {
   font-weight: 700;
   line-height: 34.13px;
   text-align: center;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
 }
 @media (max-width: 768px) {
   .articles__title {
     font-size: 20px;
-    font-weight: 700;
     line-height: 24.38px;
-    text-align: center;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
   }
 }
 
@@ -245,19 +204,10 @@ a {
   font-weight: 400;
   line-height: 20px;
   text-align: center;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
 }
 @media (max-width: 768px) {
   .articles__subtitle {
     font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
   }
 }
 
@@ -269,20 +219,11 @@ a {
   font-weight: 700;
   line-height: 25px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   margin-bottom: 24px;
 }
 @media (max-width: 768px) {
   .articles__nav {
     font-size: 12px;
-    font-weight: 700;
-    line-height: 25px;
-    text-align: left;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
   }
 }
 .articles__nav li.active {
@@ -321,6 +262,7 @@ a {
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  min-height: 475px;
 }
 .articles__card:hover {
   transform: translateY(-10px);
@@ -341,6 +283,8 @@ a {
   flex-direction: column;
   gap: 15px;
   font-family: "Open Sans", sans-serif;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .articles__card__content__date {
@@ -348,9 +292,6 @@ a {
   font-weight: 400;
   line-height: 16.34px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
 }
 
 .articles__card__content__title {
@@ -358,9 +299,6 @@ a {
   font-weight: 700;
   line-height: 25px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
 }
 
 .articles__card__content__body {
@@ -368,9 +306,6 @@ a {
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
 }
 
 .sign-in {
@@ -395,19 +330,12 @@ a {
   font-weight: 700;
   line-height: 38.13px;
   text-align: center;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
 }
 @media (max-width: 768px) {
   .sign-in__title {
     font-size: 20px;
-    font-weight: 700;
     line-height: 27.24px;
     text-align: left;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
     width: 100%;
   }
 }
@@ -440,9 +368,6 @@ a {
   font-weight: 700;
   line-height: 25px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
 }
 .sign-in__form input,
 .sign-in__form textarea {
@@ -451,9 +376,6 @@ a {
   font-weight: 400;
   line-height: 25px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   border: 1px solid #495057;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -473,9 +395,6 @@ a {
   font-weight: 700;
   line-height: 25px;
   text-align: center;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   color: white;
   background-color: #D4A373;
   padding: 8px 134px;
@@ -516,9 +435,6 @@ a {
   font-weight: 400;
   line-height: 25px;
   text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
   border: 1px solid #495057;
 }
 

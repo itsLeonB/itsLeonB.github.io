@@ -29,16 +29,10 @@
     font-weight: 700;
     line-height: 34.13px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 
     @include media($mobile) {
         font-size: 20px;
-        font-weight: 700;
         line-height: 24.38px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
     }
 }
 
@@ -48,16 +42,9 @@
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 
     @include media($mobile) {
         font-size: 12px;
-        font-weight: 400;
-        line-height: 20px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
     }
 }
 
@@ -69,17 +56,10 @@
     font-weight: 700;
     line-height: 25px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     margin-bottom: 24px;
 
     @include media($mobile) {
         font-size: 12px;
-        font-weight: 700;
-        line-height: 25px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
     }
 
     li.active {
@@ -120,6 +100,7 @@
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    min-height: 475px;
 
     &:hover {
         transform: translateY(-10px);
@@ -141,6 +122,8 @@
     flex-direction: column;
     gap: 15px;
     font-family: $font-open-sans;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .articles__card__content__date {
@@ -148,8 +131,6 @@
     font-weight: 400;
     line-height: 16.34px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .articles__card__content__title {
@@ -157,8 +138,6 @@
     font-weight: 700;
     line-height: 25px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .articles__card__content__body {
@@ -166,6 +145,4 @@
     font-weight: 400;
     line-height: 20px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }

@@ -29,8 +29,6 @@
         font-weight: 700;
         line-height: 19.07px;
         text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
         transition: color 0.3s ease;
 
         &:hover {
@@ -39,11 +37,7 @@
 
         @include media($mobile) {
             font-size: 12px;
-            font-weight: 700;
             line-height: 16.34px;
-            text-align: left;
-            text-underline-position: from-font;
-            text-decoration-skip-ink: none;
         }
     }
 }
@@ -54,8 +48,6 @@
     font-weight: 700;
     line-height: 27.24px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     transition: transform 0.3s ease;
 
     &:hover {
@@ -65,10 +57,6 @@
     @include media($mobile) {
         font-family: $font-spartan;
         font-size: 14px;
-        font-weight: 700;
         line-height: 15.68px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
     }
 }
